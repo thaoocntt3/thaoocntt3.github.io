@@ -20,7 +20,7 @@
                 <li><a href="#tour">Tour</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
-                    <a href="">
+                    <a href="#">
                         More
                         <i class=" button-down ti-angle-down"></i>
                     </a>
@@ -41,17 +41,19 @@
         </div>
 
         <div id="slider">
+            <div class="slider-img">
+                <img src="./assets/img/slider/slider1.jpg" alt="Band">
+            </div>
             <div class="text-content">
                 <h2 class="text-heading">Chicago</h2>
                 <p class="text-sub-heading">
                     Thank you, Chicago - A night we won't forget.
                 </p>
-
             </div>
         </div>
 
         <div id="content">
-            <!--begin about-->
+            <!--begin about section-->
             <div id="band" class="content-section">
                 <h1 class="section-heading">THE BAND</h1>
                 <p class="section-sub-heading">We love music</p>
@@ -83,9 +85,9 @@
                     </div>
                 </div>
             </div>
-            <!--end about-->
+            <!--end about section-->
 
-            <!--begin tour-->
+            <!--begin tour section-->
             <div id="tour" class="tour-section">
                 <div class="content-section">
                     <h1 class="section-heading text-white">TOUR DATES</h1>
@@ -128,46 +130,12 @@
                     </div>
                 </div>
             </div>
-            <!--end tour-->
+            <!--end tour section-->
 
             <!--begin contact section-->
             <div id="contact" class="content-section">
                 <h1 class="section-heading">CONTACT</h1>
                 <p class="section-sub-heading">Fan? Drop a note!</p>
-                <!--
-                    <div class="row contact-content">
-                    <div class="col col-half contact-info">
-                        <p><i class="ti-location-pin"></i>
-                            Chicago, US
-                        </p>
-                        <p><i class="ti-mobile"></i>
-                            Phone: +00 151515
-                        </p>
-                        <p><i class="ti-email"></i>
-                            Email: mail@mail.com
-                        </p>
-                    </div>
-                    <div class="col col-half contact-form">
-                        <form action="">
-                            <div class="row">
-                                <div class="col col-half">
-                                    <input type="text" name="" placeholder="Name" required id="" class="form-control">
-                                </div>
-                                <div class="col col-half">
-                                    <input type="email" name="" placeholder="Email" required id="" class="form-control">
-                                </div>
-                            </div>
-                            <div class="row mt-8">
-                                <div class="col col-full">
-                                    <input type="text" name="" placeholder="Message" required id=""
-                                        class="form-control">
-                                </div>
-                            </div>
-                            <input class="form-submit-btn mt-16" type="submit" value="SEND">
-                        </form>
-                    </div>
-                </div>
-                -->
 
                 <div class="row contact-content">
                     <div class="col col-half contact-info">
@@ -205,7 +173,7 @@
             <div class="map-section">
                 <img src="./assets/img/places/map.jpg" alt="Map">
             </div>
-            <!--end contact-->
+            <!--end contact section-->
 
         </div>
 
@@ -224,7 +192,7 @@
         </div>
 
     </div>
-
+    <!--begin modal section-->
     <div class="modal js-modal">
         <div class="modal-container js-modal-container">
             <div class="modal-close js-modal-close">
@@ -262,6 +230,9 @@
             </div>
         </div>
     </div>
+    <!--end modal section-->
+
+    <!--javarscript-->
     <script>
         //khai báo  biến//
         const buyBtns = document.querySelectorAll('.js-buy-ticket')
@@ -269,7 +240,7 @@
         const modalClose = document.querySelector('.js-modal-close')
         const modalContainer = document.querySelector('.js-modal-container')
 
-        //hàm hiển thị modal//
+        //hàm hiển thị modal
         function showBuyTickets() {
             modal.classList.add('open')
         }
